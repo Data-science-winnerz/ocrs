@@ -1,6 +1,7 @@
 import cv2  
 import pytesseract
 from PIL import Image
+import pandas as pd
 
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 # image = cv2.imread("sample.png")
@@ -12,5 +13,3 @@ pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tessera
 
 text = pytesseract.image_to_string(Image.open("processed.png"))
 print(text)
-import pytesseract
-print(pytesseract)
