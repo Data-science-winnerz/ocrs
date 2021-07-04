@@ -1,5 +1,5 @@
-
-GOOGLE_APPLICATION_CREDENTIAL = r"E:\Projects\Image Detection\tactical-hydra-317914-2ab148e32474.json"
+import os
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"]=r"E:\Projects\Image Detection\tactical-hydra-317914-2ab148e32474.json"
 def detect_text (path):
     from google.cloud import vision
     import io
